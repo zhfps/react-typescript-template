@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
+    <!-- 其他标签 -->
+    <% htmlWebpackPlugin.options.cdncss.forEach(function(item){ if(item){ %>
+        <link href="<%= item %>" rel="stylesheet" />
+        <% }}) %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <% htmlWebpackPlugin.options.cdnjs.forEach(function(item){ if(item){ %>
+        <script type="text/javascript" src="<%= item %>"></script>
+        <% }}) %>
+  </body>
+</html>

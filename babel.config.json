@@ -1,0 +1,22 @@
+{
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "current",
+            "chrome": "58",
+            "ie": "8"
+          }
+        }
+      ],
+      ["@babel/preset-react"],
+      ["@babel/preset-typescript", {
+        "isTSX": true,
+        "allExtensions": true
+      }]
+    ],
+    "plugins": [
+        "@babel/plugin-transform-runtime"
+    ]
+  }
