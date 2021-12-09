@@ -40,17 +40,21 @@ module.exports = {
           },
         extensions: ['.tsx', '.ts', '.js']
     },
+    // 拆分包
     externals: isDev ? {} : externals,
+    // 打包体积限制
     performance: {
         maxAssetSize: isDev ? 10000000 : 100000,
         maxEntrypointSize: isDev ? 40000000 : 400000
     },
+    // 分包
     optimization: {
         splitChunks: {
           chunks: 'all',
           minSize: 1000
         },
       },
+    // 打包输出
     output: {
         filename: 'js/[contenthash:4].bundle.js',
         path: path.resolve(__dirname, 'dist'),
@@ -59,6 +63,7 @@ module.exports = {
         publicPath: '/'
       },
     devtool: 'inline-source-map',
+    // 插件
     plugins: [
         new HtmlWebpackPlugin({
             title: 'data-v',
