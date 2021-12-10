@@ -1,9 +1,8 @@
 import React from 'react'
-const test = () => { console.log('test') }
-test()
+import Home from './pages/Home'
 const App = () => (
   <div className='App'>
-    <h1>Hello World</h1>
+    <Home></Home>
   </div>
 )
 
