@@ -1,8 +1,8 @@
 import React from 'react'
-import Home from './pages/Home'
+import Routers from './routers'
 const App = () => (
   <div className='App'>
-    <Home></Home>
+    <Routers />
   </div>
 )
 

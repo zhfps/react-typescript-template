@@ -74,7 +74,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      '/@/': path.resolve(__dirname, 'src/')
+      '@': path.resolve(__dirname, './src')
     },
     extensions: ['.tsx', '.ts', '.js']
   },
@@ -103,7 +103,11 @@ module.exports = {
   // 本地服务
   devServer: {
     host: '0.0.0.0',
-    port: 3000
+    port: 3000,
+    client: {
+      progress: true
+    },
+    historyApiFallback: true // 缺少该配置，会出现上面的错误
   },
   stats: {
     preset: 'minimal',
