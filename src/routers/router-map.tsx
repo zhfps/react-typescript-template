@@ -8,7 +8,7 @@ interface IRouter{
 
 const RouterMap:Array<IRouter> = [
   {
-    path: 'setting',
+    path: 'admin/sub-page1',
     element: <Setting></Setting>
   },
   {

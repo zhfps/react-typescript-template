@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import BaseLayout from '@/layout/BaseLayout'
+import BaseLayout from '@/layout'
 import RouterMap from './router-map'
 import Home from '@/pages/Home'
 const Routers = () => {
