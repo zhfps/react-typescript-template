@@ -46,6 +46,9 @@ module.exports = {
             loader: 'less-loader',
             options: {
               lessOptions: {
+                modifyVars: {
+                  // 'primary-color': '#181a1e'
+                },
                 javascriptEnabled: true
               }
             }

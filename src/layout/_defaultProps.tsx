@@ -1,6 +1,5 @@
 export default {
-  title: 'admin-template',
-  locale: 'zh-CN',
+  title: '云熙科技',
   route: {
     path: '/',
     routes: [

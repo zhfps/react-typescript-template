@@ -5,6 +5,7 @@ import { Provider } from 'react-redux'
 import thunk from 'redux-thunk'
 import App from './App'
 import state from './store'
+import './styles/index.less'
 const store = createStore(state, applyMiddleware(thunk))
 ReactDOM.render(
   <React.StrictMode>
